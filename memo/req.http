@@ -1,0 +1,29 @@
+### 노트 생성
+POST http://localhost:1000/notes
+Content-Type: application/json
+
+{
+    "title": "새 노트",
+    "content": "노트 내용입니다."
+}
+
+### 모든 노트 조회
+GET http://localhost:1000/notes
+
+### 특정 노트 조회
+GET http://localhost:1000/notes/1729515619579
+
+### 노트 수정
+PUT http://localhost:1000/notes/1729515619579
+Content-Type: application/json
+
+{
+    "title": "수정된 제목",
+    "content": "수정된 내용"
+}
+
+### 노트 삭제
+DELETE http://localhost:1000/notes/1729515728787
+
+### 노트 검색
+GET http://localhost:1000/notes?search=수정된
